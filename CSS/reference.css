@@ -1,0 +1,61 @@
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* Set padding and margin as desired */
+    padding: 25px;
+  }
+  
+  .project {
+    position: relative;
+    width: 45%; /* Adjust width as needed */
+    margin-bottom: 20px; /* Set margin as desired */
+  }
+  
+  
+  .project img {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+    
+    
+  }
+  
+  .project img:last-of-type {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    
+  }
+  
+  .project:hover img:last-of-type {
+    display: block;
+
+  }
+  
+  .project-name {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    /* Set font size and color as desired */
+  }
+  
+
+
+  @media screen and (max-width: 680px) {
+    
+    .projects{
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .project{
+      width: fit-content;
+    }
+
+  
+  }

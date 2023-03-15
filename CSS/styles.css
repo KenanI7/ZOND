@@ -1,0 +1,183 @@
+
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 1;
+ 
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 80px;
+    
+
+}
+
+.logo-link
+{
+    display: block;
+    z-index: 2;
+}
+
+.logo {
+
+    height: 40px;
+    border-radius: 50%;
+
+    
+}
+
+.instagram,
+.facebook {
+    display: inline-block;
+    float: right;
+}
+
+nav ul li {
+    margin-left: 15px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+nav ul li:hover {
+    background: rgb(204, 204, 204);
+}
+
+nav ul li a {
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+}
+
+.social-icons i {
+    font-size: 27px;
+    transition: ease 0.5s;
+    margin-left: 10px;
+    opacity: 1;
+}
+
+.social-icons i:hover {
+    transform: translateY(-4px);
+    opacity: .4;
+}
+
+/* // Mobile menu */
+
+.mobile-menu {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.mobile-menu:hover {
+    opacity: .5;
+}
+
+/* // Mobile nav */
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    max-width: 400px;
+    width: 100%;
+    background: #f1f1f1;
+    flex-direction: column;
+    z-index: 1;
+    transform: translateX(-500px);
+    opacity: 0;
+    transition: 500ms;
+}
+
+.mobile-nav.show {
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 3;
+}
+
+.close-holder {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(158, 157, 157);
+    background-color: rgb(213, 213, 213);
+}
+
+.close-button {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+
+.close-holder p {
+    margin: 0;
+    font-size: larger;
+    font-weight: 600
+}
+
+.mobile-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+
+}
+
+.mobile-nav ul li {
+    font-size: larger;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.mobile-nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    
+    .mobile-menu {
+     display: block;
+     order: 1;
+    }
+
+    .logo-link {
+        order: 2;
+    }
+
+
+    .social-icons {
+        order: 3;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+}
+
