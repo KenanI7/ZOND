@@ -3,8 +3,8 @@
   .map {
     display: flex;
     flex: 2;
-    height: 450px; /* Set height as desired */
-    justify-content: flex-end;
+    height: 500px; /* Set height as desired */
+    justify-content: center;
 
    
   }
@@ -154,14 +154,14 @@
   background: #333;
 } 
 
-
+/* 
 #map{
   width: 100%;
   border-color: #2c532c;
   border-width: 10px;
   align-items: center;
   height: 60vh;
-  }
+  } */
 
 @media screen and (max-width: 700px) {
   .contact-form {
@@ -183,6 +183,11 @@
 
   #map{
 margin-top: 630px;
+
+  }
+
+  .map iframe {
+    width: 100%;
   }
 
 }
