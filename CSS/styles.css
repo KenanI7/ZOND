@@ -103,7 +103,7 @@ nav ul li a {
     background: #f1f1f1;
     flex-direction: column;
     z-index: 1;
-    transform: translateX(-500px);
+    transform: translateX(-800px);
     opacity: 0;
     transition: 500ms;
 }
