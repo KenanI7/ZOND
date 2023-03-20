@@ -61,7 +61,7 @@
 }
 .contact-form .first-container .info-container div:first-of-type p {
   max-width: 260px;
-  color: #999;
+  color: #00ad5f;
 }
 .contact-form .first-container .info-container div p {
   font-size: 20px;
@@ -72,8 +72,8 @@
   padding: 30px;
 }
 .contact-form .second-container h2 {
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 33px;
+  font-weight: 700;
   color: #333;
   line-height: 1.2;
   text-align: center;
@@ -120,7 +120,23 @@
   padding: 10px 20px;
   margin-top: -1px;
 }
-.contact-form .second-container form button {
+ .send-button {
+  width: 200px;
+  height: 50px;
+  background: #00ad5f;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 0;
+  position: relative;
+  left: calc(50% - 100px);
+  cursor: pointer;
+  margin-bottom: 5px;
+  
+}
+
+.reset-button {
   width: 200px;
   height: 50px;
   background: #00ad5f;
@@ -133,11 +149,21 @@
   left: calc(50% - 100px);
   cursor: pointer;
 }
-.contact-form .second-container form button:hover {
-  background: #333;
-}
 
-@media screen and (max-width: 800px) {
+.send-button :hover {
+  background: #333;
+} 
+
+
+#map{
+  width: 100%;
+  border-color: #2c532c;
+  border-width: 10px;
+  align-items: center;
+  height: 60vh;
+  }
+
+@media screen and (max-width: 700px) {
   .contact-form {
     width: 90vw;
     margin-top: 600px;
@@ -154,4 +180,9 @@
   .contact-form .first-container {
     padding: 40px 0;
   }
+
+  #map{
+margin-top: 630px;
+  }
+
 }

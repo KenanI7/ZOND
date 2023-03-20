@@ -47,78 +47,68 @@
   </header>
 
 
-
-
-  <!-- <section class="contact">
-    <div class="contact-info">
-      <h2>Contact Us</h2>
-      <div class="info">
-        <i class="fa-solid fa-location-dot"></i>
-        <p>123 Main Street, Suite 101<br>Anytown, USA 12345</p>
-      </div>
-      <div class="info">
-        <i class="fa fa-envelope"></i>
-        <p>info@company.com</p>
-      </div>
-      <div class="info">
-        <i class="fa fa-phone"></i>
-        <p>(123) 456-7890</p>
-      </div>
-    </div>
-    <div class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.6312852347314!2d-122.32301568426317!3d47.61582687918684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDEwJzA4LjciTiAxMjLCsDI1JzI4LjUiVw!5e0!3m2!1sen!2sus!4v1551811355766"
-         frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-    
-  </section> -->
-
   <div class="wholepage">
-  
 
-  <div class="contact-form">
-    <div class="first-container">
-      <div class="info-container">
-        <div><img class="icon">
-          <h3>Adresa:</h3>
-          <p>tome mede </p>
-        </div>
-        <div> <img class="icon">
-          <h3>Lets Talk</h3>
-          <p>+1 800 1236879</p>
-        </div>
-        <div><img class="icon">
-          <h3>General Support</h3>
-          <p>contact@example.com</p>
+
+    <div class="contact-form">
+      <div class="first-container">
+        <div class="info-container">
+          <div><img class="icon">
+            <h3>Adresa:</h3>
+            <p>Blažujski drum 2, Ilidža, Bosnia and Herzegovina</p>
+          </div>
+          <div> <img class="icon">
+            <h3>Broj Telefona:</h3>
+            <p>+387 62 780 315</p>
+          </div>
+          <div><img class="icon">
+            <h3>Radno Vrijeme:</h3>
+            <p>Ponedeljak - Subota: <br> 08:00h-19:00h
+              <br> Nedelja: Neradna
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="second-container">
-      <h2>Send Us A Message</h2>
-      <form>
-        <div class="form-group">
-          <label for="name-input">Tell us your name*</label>
-          <input id="name-input" type="text" placeholder="First name" required>
-          <input type="text" placeholder="Last name" required>
-        </div>
-        <div class="form-group">
-          <label for="email-input">Enter your email*</label>
-          <input id="email-input" type="text" placeholder="Eg. example@email.com" required>
-        </div>
-        <div class="form-group">
-          <label for="phone-input">Enter phone number*</label>
-          <input id="phone-input" type="text" placeholder="Eg. +1 800 000000" required>
-        </div>
-        <div class="form-group">
-          <label for="message-textarea">Message</label>
-          <textarea id="message-textarea" placeholder="Write us a message"></textarea>
-        </div>
-        <button>Send message</button>
-      </form>
+      <div class="second-container">
+        <h2>Kontaktirajte nas</h2>
+        <form id="send-email">
+          <div class="form-group">
+            <label for="name-input">Vaše Ime i Prezime*</label>
+            <input id="name-input" type="text" placeholder="Ime" required name="first_name">
+            <input type="text" placeholder="Prezime" required name="last_name">
+          </div>
+          <div class="form-group">
+            <label for="email-input">Unesite vašu email adresu*</label>
+            <input id="email-input" type="text" placeholder="Npr. example@email.com" required name="email">
+          </div>
+          <div class="form-group">
+            <label for="phone-input">Unesite vaš broj telefona*</label>
+            <input id="phone-input" type="number" placeholder="Npr. +387 12 345 678" required name="phone_no">
+          </div>
+          <div class="form-group">
+            <label for="message-textarea">Poruka</label>
+            <textarea id="message-textarea" placeholder="Napišite nam poruku" name="description"></textarea>
+          </div>
+          <!-- <button>Send message</button> -->
+
+          <input class="send-button" type="submit" name="submit" value="Podnesi" />
+          <input class="reset-button" type="reset" name="reset" value="Resetuj" />
+
+        </form>
+      </div>
     </div>
   </div>
+  <div class="map">
+    <iframe id="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.6312852347314!2d-122.32301568426317!3d47.61582687918684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDEwJzA4LjciTiAxMjLCsDI1JzI4LjUiVw!5e0!3m2!1sen!2sus!4v1551811355766"
+      frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
 
-</div>
+
+
+
+
+
 
 
   <div id="slider" class="mobile-nav">
@@ -145,4 +135,4 @@
 </html>
 
 <script src="./JS/meni.js"></script>
-<script src="./JS/kontakt.js" ></script>
+<script src="./JS/kontakt.js"></script>
