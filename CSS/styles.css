@@ -2,7 +2,7 @@
 html{
 
     scroll-behavior: smooth;
-
+    
 }
 
 
@@ -11,6 +11,7 @@ html{
 }
 
 body {
+    background-color: #ffffff17;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -162,9 +163,8 @@ nav ul li a {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    height: 50px;
-    width: 50px;
-    background: #fe0000;
+    height: 20px;
+    width: 20px;
     border-radius: 10%;
     z-index: 10;
     display: flex;
@@ -174,7 +174,9 @@ nav ul li a {
 
    .back-to-top i {
     margin: auto;
-    font-size: 1em;
+    /* font-size: 1.3em; */
+    height: 50px;
+    width: 30px;
     color: #000000;
 }
 
@@ -225,7 +227,7 @@ footer#site-footer section.horizontal-footer-section {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    padding: 2.38rem 0rem;
+    padding: 1.7rem 0rem;
     justify-content: center;
 }
 
