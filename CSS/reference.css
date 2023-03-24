@@ -1,24 +1,32 @@
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   /* Set padding and margin as desired */
     padding: 25px;
+    gap: 50px;
   }
   
   .project {
     position: relative;
-    width: 45%; /* Adjust width as needed */
+    flex: 1;
+    gap: 50px;
+    height: 500px;
     margin-bottom: 20px; /* Set margin as desired */
+    aspect-ratio: 1 / 1;
   }
   
   
-  .project img {
+  .project .img{
     width: 100%;
-    height: auto;
-    display: block;
-    
-    
+    height: 100%;
+    background-image: var(--background);
+    background-size:cover;
+    background-position: center;
+  }
+
+  .project .img:hover{
+    background-image: var(--background-transition);
+    background-size:cover;
     
   }
   
@@ -33,7 +41,6 @@
   
   .project:hover img:last-of-type {
     display: block;
-
   }
   
   .project-name {
@@ -46,7 +53,7 @@
   
 
 
-  @media screen and (max-width: 680px) {
+  /* @media screen and (max-width: 680px) {
     
     .projects{
       flex-direction: column;
@@ -58,4 +65,4 @@
     }
 
   
-  }
+  } */
