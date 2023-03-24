@@ -10,7 +10,8 @@
     position: relative;
     flex: 1;
     gap: 50px;
-    height: 500px;
+    height: 400px;
+    /* max-width: 500px; */
     margin-bottom: 20px; /* Set margin as desired */
     aspect-ratio: 1 / 1;
   }
@@ -53,16 +54,8 @@
   
 
 
-  /* @media screen and (max-width: 680px) {
-    
-    .projects{
-      flex-direction: column;
-      justify-content: center;
+  @media screen and (max-width: 680px) {
+        .projects{
+      padding: 0;
     }
-
-    .project{
-      width: fit-content;
-    }
-
-  
-  } */
+  }
