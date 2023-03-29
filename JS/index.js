@@ -1,15 +1,9 @@
-let bannerDesriptions = [
-    `Možemo Vam ponuditi izmjeru Vašeg prostora, šivanje zavjesa po mjeri te ugradnju karniša.
- Uz najveći izbor zavjesa i dekora te individualni pristup svakom klijentu, 
- naši timovi će vam uz stručne savjete pomoći da na brz i jednostavan način dođete do najboljeg rješenja za vaš dom.`,
-`Tepih centar nudi sve na jednom mjestu za vaše podove: savjetovanje, izbor i stručnu uslugu postavljanja.
-Pružamo Vam stručno savjetovanje oko idealnog odabira i odgovarajućeg rješenja za vaš pod, preciznu izmjeru 
-prostora i profesionalno postavljanje podne obloge.`,
-`Bez obzira radi li se o privatnom ili poslovnom prostoru, nudimo Vam mjerenje 
-te predračun potrebne količine materijala uz optimalnu iskoristivost.`,
-`Tepihe, tepih stazu ili tapison kupljenu u našim poslovnicama, krojimo na željene dimenzije te Vam nudimo odmah 
-i uslugu rubljenja krajeva. Cijena rubljenja je 8,00 kn po metru.`,
-`asdasadhiodsaoh adshodsahodasdhaso adshdashidashidas hadshsadds`
+let bannerDesriptions = [ 
+'Naša glavna branša jeste rad sa podnim podlogama, sve od parketa do stadiona umjetne trave. Dobrodošli na vaše idealno rješenje.',
+ 'Bez obzira radi li se o privatnom ili poslovnom prostoru, nudimo vam mjerenje te predračun potrebne količine materijala i vremena uz optimalnu iskoristivost.',
+`Zond kroz svoj brend home decor nudi i šivenje velikog izbora zavjesa po mjeri zajedno sa ugradnjom kariniša.`, 
+`Unutar home decora se također nalazi veoma bogat i kvalitetan izbor postejnog programa kako bi još više obogatili vaš prostor.`,
+`Konsultacije su besplatan način da dobijete sliku najbolje verzije vašeg prostora, bio to dom ili radni mjesto.`
 ]
 const options = document.querySelectorAll(".option");
 const description = document.getElementById("banner-text")
